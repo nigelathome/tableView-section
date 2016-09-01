@@ -14,6 +14,7 @@
 		91946C151D78104000FD027C /* Sections.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 91946C131D78104000FD027C /* Sections.xcdatamodeld */; };
 		91946C171D78104000FD027C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 91946C161D78104000FD027C /* Assets.xcassets */; };
 		91946C1A1D78104000FD027C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 91946C181D78104000FD027C /* LaunchScreen.storyboard */; };
+		91946C221D78158A00FD027C /* Sections-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 91946C211D78158A00FD027C /* Sections-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		91946C161D78104000FD027C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		91946C191D78104000FD027C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		91946C1B1D78104000FD027C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		91946C211D78158A00FD027C /* Sections-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Sections-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +69,7 @@
 				91946C101D78104000FD027C /* Main.storyboard */,
 				91946C161D78104000FD027C /* Assets.xcassets */,
 				91946C181D78104000FD027C /* LaunchScreen.storyboard */,
+				91946C211D78158A00FD027C /* Sections-Info.plist */,
 				91946C1B1D78104000FD027C /* Info.plist */,
 				91946C131D78104000FD027C /* Sections.xcdatamodeld */,
 				91946C071D78104000FD027C /* Supporting Files */,
@@ -143,6 +146,7 @@
 			files = (
 				91946C1A1D78104000FD027C /* LaunchScreen.storyboard in Resources */,
 				91946C171D78104000FD027C /* Assets.xcassets in Resources */,
+				91946C221D78158A00FD027C /* Sections-Info.plist in Resources */,
 				91946C121D78104000FD027C /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -204,6 +208,7 @@
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
@@ -226,7 +231,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
-				SDKROOT = iphoneos;
+				SDKROOT = iphoneos10.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -252,6 +257,7 @@
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
@@ -267,7 +273,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
-				SDKROOT = iphoneos;
+				SDKROOT = iphoneos10.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 			};
@@ -279,8 +285,9 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 5385W82C5B;
 				INFOPLIST_FILE = Sections/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.apress.Sections;
+				PRODUCT_BUNDLE_IDENTIFIER = com.myapp.Sections;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -291,8 +298,9 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 5385W82C5B;
 				INFOPLIST_FILE = Sections/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.apress.Sections;
+				PRODUCT_BUNDLE_IDENTIFIER = com.myapp.Sections;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;

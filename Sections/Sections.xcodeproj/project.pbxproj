@@ -15,6 +15,7 @@
 		91946C171D78104000FD027C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 91946C161D78104000FD027C /* Assets.xcassets */; };
 		91946C1A1D78104000FD027C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 91946C181D78104000FD027C /* LaunchScreen.storyboard */; };
 		91946C221D78158A00FD027C /* Sections-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 91946C211D78158A00FD027C /* Sections-Info.plist */; };
+		91946C241D78267300FD027C /* sortednames.plist in Resources */ = {isa = PBXBuildFile; fileRef = 91946C231D78267300FD027C /* sortednames.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		91946C191D78104000FD027C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		91946C1B1D78104000FD027C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		91946C211D78158A00FD027C /* Sections-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Sections-Info.plist"; sourceTree = "<group>"; };
+		91946C231D78267300FD027C /* sortednames.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = sortednames.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +73,7 @@
 				91946C181D78104000FD027C /* LaunchScreen.storyboard */,
 				91946C211D78158A00FD027C /* Sections-Info.plist */,
 				91946C1B1D78104000FD027C /* Info.plist */,
+				91946C231D78267300FD027C /* sortednames.plist */,
 				91946C131D78104000FD027C /* Sections.xcdatamodeld */,
 				91946C071D78104000FD027C /* Supporting Files */,
 			);
@@ -146,6 +149,7 @@
 			files = (
 				91946C1A1D78104000FD027C /* LaunchScreen.storyboard in Resources */,
 				91946C171D78104000FD027C /* Assets.xcassets in Resources */,
+				91946C241D78267300FD027C /* sortednames.plist in Resources */,
 				91946C221D78158A00FD027C /* Sections-Info.plist in Resources */,
 				91946C121D78104000FD027C /* Main.storyboard in Resources */,
 			);

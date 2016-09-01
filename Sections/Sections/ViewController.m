@@ -8,7 +8,12 @@
 
 #import "ViewController.h"
 
+static NSString *SectionsTableIdentifier = @"SectionsTableIdentifier";
+
 @interface ViewController ()
+
+@property (copy, nonatomic) NSDictionary *names;
+@property (copy, nonatomic) NSArray *keys;
 
 @end
 

@@ -34,6 +34,11 @@ static NSString *SectionsTableIdentifier = @"SectionsTableIdentifier";
         contentInset.top = 20;
         [tableView setContentInset:contentInset];
        
+        // Reducing Status Bar Interference, add rectange into status bar
+        UIView *background= [[UIView alloc] initWithFrame:CGRectMake(0, 0, 320, 20)];
+        //background.backgroundColor = [UIColor redColor];
+        background.backgroundColor = [UIColor colorWithWhite:1.0f alpha:0.9f];
+        [self.view addSubview:background];
     }
 }
 

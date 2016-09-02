@@ -22,11 +22,19 @@ static NSString *SectionsTableIdentifier = @"SectionsTableIdentifier";
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
-    UITableView *table = (id)[self.view viewWithTag:1];
-    [table registerClass:[UITableViewCell class] forCellReuseIdentifier:SectionsTableIdentifier];
+    UITableView *tableView = (id)[self.view viewWithTag:1];
+    [tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:SectionsTableIdentifier];
     NSString *path = [[NSBundle mainBundle] pathForResource:@"sortednames" ofType:@"plist"];
     self.names = [NSDictionary dictionaryWithContentsOfFile:path];
     self.keys = [[self.names allKeys] sortedArrayUsingSelector:@selector(compare:)];
+    
+    if (tableView.style == UITableViewStylePlain) {
+        // set scrollView
+        UIEdgeInsets contentInset = tableView.contentInset;
+        contentInset.top = 20;
+        [tableView setContentInset:contentInset];
+       
+    }
 }
 
 
@@ -63,9 +71,14 @@ static NSString *SectionsTableIdentifier = @"SectionsTableIdentifier";
     return cell;
 }
 
-
-
-
-
+- (NSArray *)sectionIndexTitlesForTableView:(UITableView *)tableView {
+    if (1 == tableView.tag) {
+        tableView.sectionIndexBackgroundColor = [UIColor clearColor];//背景色
+        tableView.sectionIndexColor = [UIColor blueColor];//字体色
+        return self.keys;
+    } else {
+        return nil;
+    }
+}
 
 @end

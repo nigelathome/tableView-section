@@ -18,17 +18,23 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" tag="1" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="3le-C1-M0G">
-                                <frame key="frameInset" minY="20" width="375" height="647"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <tableView clipsSubviews="YES" tag="1" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="ReE-5S-QTw">
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="320" id="Aha-8a-orK"/>
+                                </constraints>
                                 <connections>
-                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="un1-SY-m55"/>
-                                    <outlet property="delegate" destination="BYZ-38-t0r" id="GAn-m0-a01"/>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="SND-s4-J4a"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="qJA-6w-Dtd"/>
                                 </connections>
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="ReE-5S-QTw" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="Me6-Yn-8Rm"/>
+                            <constraint firstItem="ReE-5S-QTw" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="aRg-sL-4yv"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="ReE-5S-QTw" secondAttribute="bottom" id="or0-rS-UDr"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
